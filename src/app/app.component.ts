@@ -7,6 +7,9 @@ import { AngularReactModule } from '@bubblydoo/angular-react';
   selector: 'app-root',
   imports: [DialogPreviewComponent, AngularReactModule],
   templateUrl: './app.component.html',
+  host: {
+    class: 'flex items-center justify-center size-full',
+  },
 })
 export class AppComponent {
   TooltipDemo = TooltipDemo;
