@@ -22,6 +22,8 @@
     "@bubblydoo/angular-react": "^0.4.5",
     "@ng-icons/core": "^29.10.0",
     "@ng-icons/lucide": ">=29.0.0",
+    "@radix-ui/react-dialog": "^1.1.6",
+    "@radix-ui/react-label": "^2.1.2",
     "@radix-ui/react-slot": "^1.1.2",
     "@radix-ui/react-tooltip": "^1.1.8",
     "@spartan-ng/brain": "^0.0.1-alpha.421",

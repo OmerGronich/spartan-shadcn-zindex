@@ -61,6 +61,10 @@ html,body {
 }
 
 
+[data-radix-popper-content-wrapper] {
+  z-index: 1002 !important;
+}
+
 @layer base {
   * {
     @apply border-border;

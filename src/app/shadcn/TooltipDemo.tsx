@@ -12,7 +12,7 @@ export function TooltipDemo() {
     <TooltipProvider delayDuration={100}>
       <Tooltip>
         <TooltipTrigger asChild>
-          <Button variant="outline">Hover over me to open React tooltip</Button>
+          <Button variant="outline">React tooltip</Button>
         </TooltipTrigger>
         <TooltipContent>
           <p>Add to library</p>

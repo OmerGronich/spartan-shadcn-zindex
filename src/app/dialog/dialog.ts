@@ -38,17 +38,13 @@ import { TooltipDemo } from '../shadcn/TooltipDemo';
   ],
   template: `
     <hlm-dialog>
-      <button id="edit-profile" brnDialogTrigger hlmBtn>
-        Click me to open Angular dialog
-      </button>
+      <button id="edit-profile" brnDialogTrigger hlmBtn>Angular dialog</button>
       <hlm-dialog-content class="sm:max-w-[425px]" *brnDialogContent="let ctx">
         <hlm-dialog-header>
           <h3 hlmDialogTitle>Edit profile</h3>
           <p hlmDialogDescription>
             Make changes to your profile here. Click save when you're done.
           </p>
-
-          React tooltip:
           <react-wrapper [component]="TooltipDemo" />
         </hlm-dialog-header>
         <div class="py-4 grid gap-4">
