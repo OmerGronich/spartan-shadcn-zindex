@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { DialogPreviewComponent } from './dialog/dialog';
+import { TooltipDemo } from './shadcn/TooltipDemo';
+import { AngularReactModule } from '@bubblydoo/angular-react';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [DialogPreviewComponent, AngularReactModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'spartan-shadcn-zindex';
+  TooltipDemo = TooltipDemo;
 }
