@@ -13,14 +13,17 @@ import { Input } from "./input";
 import React from "react";
 import { AngularWrapper } from "@bubblydoo/angular-react";
 import { TooltipPreviewComponent } from "../dialog/tooltip";
+import { TooltipDemo } from "./TooltipDemo";
 
 export function DialogDemo() {
+  const [open, setOpen] = React.useState(false);
+
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button variant="outline">React dialog</Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px]" onOverlayClick={() => setOpen(false)}>
         <DialogHeader>
           <DialogTitle>Edit profile</DialogTitle>
           <DialogDescription>
@@ -28,6 +31,7 @@ export function DialogDemo() {
           </DialogDescription>
 
           <AngularWrapper component={TooltipPreviewComponent} />
+          <TooltipDemo />
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <div className="grid grid-cols-4 items-center gap-4">
